@@ -1,6 +1,5 @@
 import ShopPage from '../pageobjects/shop.page'
 import CartPage from '../pageobjects/cart.page'
-import shopPage from '../pageobjects/shop.page';
 
 describe('Validation over the Shop page - Test cases 3 and 4', () => {
 
@@ -23,7 +22,6 @@ describe('Validation over the Shop page - Test cases 3 and 4', () => {
         const valentineSubtotal = await CartPage.checkToySubTotal('valentine');
         expect(valentineSubtotal).toBeTruthy;
         const total = await CartPage.getTotal();
-        console.log(total);
         expect(total).toEqual(frogSubtotal + bunnySubtotal + valentineSubtotal);
     });
 

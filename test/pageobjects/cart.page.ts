@@ -12,10 +12,6 @@ class CartPage extends Page {
         return $('.total');
     }
 
-    public get EmptyCartButton() {
-        return $('.btn-danger')[1];
-    }
-
     /**
     Fill the form and submit it.
      */
@@ -38,10 +34,6 @@ class CartPage extends Page {
     public async getTotal() {
         const total: number = Number((await (await this.totalLabel).getText()).substring(7));
         return total;
-    }
-
-    public async emptyCart() {
-        await this.EmptyCartButton.click();
     }
 
     /**
