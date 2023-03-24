@@ -11,7 +11,7 @@ npm install
 ```
 ## Run the tests
 
-To run it from command console you can use
+To run it from command line you can use
 
 ```bash
 npm run wdio
